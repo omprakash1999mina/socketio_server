@@ -2,7 +2,7 @@
 
 const io = require('socket.io')(process.env.PORT || 5000, {
   cors: {
-    origin: ['http://localhost:3000', 'https://socketio-server-opdevelopers.herokuapp.com']
+    origin: [ 'https://socketio-server-opdevelopers.herokuapp.com','http://localhost:3000']
   }
 })
 console.log(`server is rununning at port : ${process.env.PORT}`)
