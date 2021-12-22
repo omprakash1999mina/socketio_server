@@ -1,7 +1,7 @@
 // const io = require('socket.io')(3000)
 console.log('server is rununning at port : 5000')
 
-const io = require('socket.io')(5000, {
+const io = require('socket.io')(process.env.PORT || 5000, {
   cors: {
     origin: ['http://localhost:3000']
   }
