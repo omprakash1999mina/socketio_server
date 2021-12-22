@@ -2,7 +2,7 @@
 
 const io = require('socket.io')(process.env.PORT || 5000, {
   cors: {
-    origin: [ 'https://chatapp-socketio-opdevelopers.herokuapp.com/','http://localhost:3000']
+    origins: [ 'https://chatapp-socketio-opdevelopers.herokuapp.com/','http://localhost:3000']
   }
 })
 
